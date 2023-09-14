@@ -204,7 +204,7 @@ main {
 
 @media only screen and (max-width:600px) {
   main {
-    height: 100%;
+    height: 140%;
     width: 100%;
   }
 
@@ -218,8 +218,21 @@ main {
     width: 100%;
   }
   #right {
-    height: 54%;
+    height: 60%;
     width: 100%;
+  }
+  .template{
+    width: 90%;
+  }
+  .templatetext{
+    font-weight: 700;
+    font-size: 4.5vw;
+  }
+  .templatemarks{
+    font-size: 4.5vw;
+  }
+  img{
+    width: 4.5vw;
   }
   #Circle { 
     height: 40vw;
