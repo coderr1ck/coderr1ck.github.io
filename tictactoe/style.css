@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Josefin+Sans:ital@1&family=Lilita+One&family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Dosis:wght@600&family=Josefin+Sans:ital@1&family=Lilita+One&family=Tilt+Prism&family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(320deg,#eb92be,#ffef78,#63c9b4);
+    
+}
+#parent{
+    height: 90%;
+    width: 90%;
+    margin-bottom: 2.5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    /* display */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* design */
+    border-radius: 5px;
+    /* border: 2px solid rgba(255, 255, 255, 0.205); */
+    /* background-color: rgba(255, 255, 255, 0.452); */
+
+}
+
+
+.child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(5.5px);              
+    -webkit-backdrop-filter: blur(5.5px);
+    /* background: rgba(255, 255, 255, 0.75); 
+    border: solid rgba(255, 255, 255,0.1) 1px; */
+    /* transparency code */
+    box-shadow: 0 4px 30px rgba(35, 35, 35,0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.28);  
+    border: solid rgba(255, 255, 255,0.34) 1px;
+    /* ends here */
+    height: 88%;
+    width: 45%;
+    border-radius: 20px;
+}
+
+#child2{
+    justify-content: center;
+}
+.game{
+    /* background: lightpink ; */
+    text-align: center;   
+}
+
+
+#id1,#id2{
+    font-family:'Lilita One', Impact;
+    font-size: 5vmax;
+    background: linear-gradient(180deg,yellow,orange,red);
+    color: transparent;
+    background-clip: text;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.288);
+}
+
+#id1{
+    font-size: 6vmax;
+}
+
+#id3{
+    height: 45%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background: burlywood; */
+}
+
+#id4{
+    padding: 10px;
+}
+
+/* #ticimg{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+    
+}     */
+.c1btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 25%;
+    width: 60%;
+    font-size: 2vmax;
+    letter-spacing: 4px;
+    font-family: 'Lilita One',Impact;
+    box-shadow: 0 4px 30px rgba(35, 35, 35,0.1);
+    border-radius: 7px; 
+    color: #232323;
+    background: inherit;  
+    border: solid rgba(255, 255, 255,0.64) 1px;
+    
+}
+
+.madewlove{
+    font-family: 'Lilita One', Impact;
+    text-decoration: underline;
+}
+
+/* left part css */
+
+#pname{
+    /* background: lightblue; */
+    height:13.5%;
+    margin-bottom: 1.5%;
+}
+
+
+.xo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 25%;
+    width: 80%;
+    /* background: lightgreen; */
+}
+
+.xbox{
+    display: grid;
+    place-items: center;
+    height: 90%;
+    width: 30%;
+    border: 1px solid rgba(255, 255, 255, 0.452); 
+    border-radius: 10px;
+    background: rgb(29, 0, 63);
+    background-size: auto;
+    color: transparent;
+    font-family: 'Lilita One','Lucida Sans';
+    font-size: 7vmax;
+    color: white;
+    
+    
+    
+}
+.txt{
+    text-align: left;
+    width: 60%;
+}
+.symbol{
+    width: 30%;
+    display: inline-block;
+}
+#reload{
+    text-align: end;
+    transform: rotate(170deg);
+    padding-right: 10px;
+}
+
+#pslide1, #pslide2{
+    color: rgba(29, 0, 63,0.9);
+    background: white;
+    height: 70%;
+    width: 46%;
+    text-align: center;
+    font-family: 'Lilita One', Impact;
+    font-size: 2.5vw;
+    -webkit-text-stroke: .5px rgb(82, 79, 79);
+    box-shadow: inset 0 0 20px 5px rgba(182, 181, 181, 0.663);
+}
+#pslide2{
+    color: transparent;
+    background: none;
+}
+
+.child:hover{
+    box-shadow: inset 0 0 5em 4em rgba(182, 181, 181, 0.663);
+    border: solid rgba(255, 255, 255,0.3) 3px;
+}
+.xbox:hover{
+    background: rgba(29, 0, 63,0.9);
+    border: 3px solid rgba(255, 255, 255, 0.9); 
+}
+.c1btn:hover{
+    box-shadow: inset 0 0 30px 5px rgba(182, 181, 181, 0.663);
+    border: solid rgba(255, 255, 255,0.64) 2px;
+}
+
+@media (max-width:830px) {
+    #parent {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .child{
+        height: 45%;
+        width: 90% ;
+    }
+    
+}

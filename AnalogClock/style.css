@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(320deg,#eb92be,#ffef78,#63c9b4);
+}
+
+.clock{
+    box-sizing: content-box;
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 35vmax;
+    width: 35vmax;
+    border-radius: 100%;
+
+    backdrop-filter: blur(5.5px);              
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75); 
+    border: solid rgba(255, 255, 255,0.1) 1px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35,0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.35); 
+    border: solid rgba(255, 255, 255,0.34) 5px;
+    
+}
+
+.hand{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50%;
+    transform-origin: bottom;
+    border-radius: 5px;
+}
+
+#hhand{
+    top: 30%;
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 20%;
+    background: rgb(7, 7, 7) ;
+    opacity: 40%;
+    z-index: 7;
+    
+}
+
+#mhand{
+    
+    top: 20%;
+    left: calc(50% - 3px);
+    height: 30%;
+    width: 6px;
+    background: rgb(7, 7, 7) ;
+    opacity: 40%;
+    z-index: 8;
+}
+
+#shand{
+    
+    top: 7.5%;
+    left: calc(50% - 1px);
+    height: 42.5%;
+    width: 2px;
+    background:#63dac2;
+    z-index: 9;
+   
+} 
+
+#center{
+    position: absolute;  
+    height: 16px;
+    width: 16px;
+    background: rgb(7, 7, 7) ;
+    border-radius: 20px;
+    opacity: 80%;
+    z-index: 10;
+}
+
+
+.minor {
+    transform: rotate(90deg);
+}
+.minor h1{
+    transform: rotate(-90deg);
+}
+
+.x{
+    height: inherit;
+    width: inherit ;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8vw;
+    opacity: 60%;
+}
+
+h1{
+    font-size: 5vw;
+}
+h3{
+    color: #63dac2;
+    font-size: 2.5vw;
+    padding: 1.2vw;
+}
+.h1{
+    transform: rotate(30deg);
+}
+.h1 h3{
+    transform: rotate(-30deg);
+}
+
+.h2{
+    transform: rotate(60deg);
+}
+.h2 h3{
+    transform: rotate(-60deg);
+}
+.h3{
+    transform: rotate(120deg);
+}
+.h3 h3{
+    transform: rotate(-120deg);
+}
+.h4{
+    transform: rotate(150deg);
+}
+.h4 h3{
+    transform: rotate(-150deg);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- left template -->
+        <div id="left">
+          
+          <div id="Result">Your Result</div>
+          <div id="Circle">
+            <span id="Marks">76</span>
+            <span id="outof"> of 100</span>
+          </div>
+          <div id="paragraphTemplate">
+            <div id="message">Great</div>
+            <div id="Paragraph"> You scored higher than 65% of the people who have taken these tests.</div>
+          </div>
+
+        </div>
+        
+        <!-- right template -->
+        <div id="right">
+          <div id="Summary" class="template">Summary</div>
+          <!-- Reaction template -->
+          <div id="Reaction" class="template">
+            <span
+              ><img src="./assets/images/icon-reaction.svg" alt="Reaction"
+            /></span>
+            <span class="templatetext">Reaction</span>
+            <span class="templatemarks"> <b class="bold">80</b> / 100</span>
+          </div>
+          <!-- Memory template -->
+          <div id="Memory" class="template">
+            <span><img src="./assets/images/icon-memory.svg" alt="Memory" /></span>
+            <span class="templatetext">Memory</span>
+            <span class="templatemarks"><b class="bold">90</b> / 100</span>
+          </div>
+          <!-- Verbal template -->
+          <div id="Verbal" class="template">
+            <span><img src="./assets/images/icon-verbal.svg" alt="Verbal" /></span>
+            <span class="templatetext">Verbal</span>
+            <span class="templatemarks"> <b class="bold">61</b> / 100</span>
+          </div>
+          <!-- Visual template -->
+          <div id="Visual" class="template">
+            <span><img src="./assets/images/icon-visual.svg" alt="Visual" /></span>
+            <span class="templatetext">Visual</span>
+            <span class="templatemarks"> <b class="bold">72</b> / 100</span>
+          </div>
+          <!-- Continue -->
+          <button class="template">Continue</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Coderr1ck</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
