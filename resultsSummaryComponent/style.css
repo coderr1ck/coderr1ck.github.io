@@ -122,12 +122,12 @@ main {
   justify-content: space-evenly;
   flex-direction: row ;
   border-radius: 10px;
-  margin-bottom: 4%;
+  margin-bottom: 1vmax;
 }
 
 
 #Summary{
-  margin-top: 8%;
+  margin-top: 1.2vmax;
   justify-content: start;
   font-size: 1.9vmax;
   font-weight: 800;
@@ -181,8 +181,8 @@ main {
 
 #right > button{
     border: none;
-    margin-top: 5%;
-    margin-bottom: 9%  ;
+    margin-top:1vw;
+    margin-bottom: 2vw  ;
     background: hsl(224, 30%, 27%);
     border-radius: 20px;
     color: white;
@@ -222,7 +222,11 @@ main {
     width: 100%;
   }
   .template{
+    height: 15%;
     width: 90%;
+  }
+  #Summary{
+    font-size: 5.5vw;
   }
   .templatetext{
     font-weight: 700;
